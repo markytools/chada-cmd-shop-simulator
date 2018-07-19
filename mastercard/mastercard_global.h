@@ -1,0 +1,12 @@
+#ifndef MASTERCARD_GLOBAL_H
+#define MASTERCARD_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MASTERCARD_LIBRARY)
+#  define MASTERCARDSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define MASTERCARDSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MASTERCARD_GLOBAL_H
